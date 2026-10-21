@@ -1,0 +1,370 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#12304a">
+  <meta name="description" content="School information, academic resources, news and announcements for DELSUTH School of Health Management.">
+  <title>DELSUTH School of Health Management</title>
+
+  <style>
+    :root {
+      --navy: #12304a;
+      --teal: #087f8c;
+      --light: #f3f7fa;
+      --white: #ffffff;
+      --text: #263746;
+      --muted: #627485;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--teal);
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: auto;
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 18px 0;
+    }
+
+    .brand {
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+
+    .brand small {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: #d5e5ef;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 14px;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #12304a, #087f8c);
+      color: white;
+      padding: 76px 0;
+    }
+
+    .hero h1 {
+      max-width: 760px;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.15;
+      margin: 0 0 20px;
+    }
+
+    .hero p {
+      max-width: 680px;
+      font-size: 1.1rem;
+    }
+
+    .button {
+      display: inline-block;
+      background: white;
+      color: var(--navy);
+      padding: 12px 20px;
+      margin-top: 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    section {
+      padding: 52px 0;
+      scroll-margin-top: 20px;
+    }
+
+    section:nth-of-type(even) {
+      background: var(--light);
+    }
+
+    h2 {
+      color: var(--navy);
+      font-size: 1.8rem;
+      margin-top: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e0e8ee;
+      border-radius: 10px;
+      padding: 22px;
+      overflow-wrap: anywhere;
+    }
+
+    .card h3 {
+      color: var(--navy);
+      margin-top: 0;
+    }
+
+    .notice {
+      border-left: 4px solid var(--teal);
+    }
+
+    .statistics {
+      background: var(--navy);
+      color: white;
+      padding: 28px;
+      border-radius: 10px;
+    }
+
+    .statistics h2 {
+      color: white;
+    }
+
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    footer {
+      background: #0b2032;
+      color: white;
+      padding: 30px 0;
+    }
+
+    footer a {
+      color: #bcecf0;
+    }
+
+    @media (max-width: 700px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 52px 0;
+      }
+
+      nav {
+        gap: 12px 16px;
+      }
+
+      section {
+        padding: 38px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        DELSUTH School of Health Management
+        <small>Learning • Professional Development • Healthcare</small>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#programmes">Programmes</a>
+        <a href="#news">News</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <h1>Welcome to DELSUTH School of Health Management</h1>
+        <p>
+          A central place for school information, academic resources,
+          announcements and updates for students and prospective applicants.
+        </p>
+        <a class="button" href="#about">Explore the School</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About the School</h2>
+        <p>
+          Welcome to the online information centre for DELSUTH School
+          of Health Management. This website is being developed to make
+          relevant school information and approved academic updates
+          easier to access.
+        </p>
+        <p class="muted">
+          The school's official history, vision, mission and leadership
+          information will be added after verification.
+        </p>
+      </div>
+    </section>
+
+    <section id="programmes">
+      <div class="container">
+        <h2>Programmes and Admissions</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Academic Programmes</h3>
+            <p>Find information about approved programmes and courses.</p>
+          </article>
+          <article class="card">
+            <h3>Admission Information</h3>
+            <p>Check verified admission requirements and application guidance.</p>
+          </article>
+          <article class="card">
+            <h3>Academic Calendar</h3>
+            <p>Access approved dates, schedules and academic notices.</p>
+          </article>
+        </div>
+        <p class="muted">
+          Programme details and admission dates will be published
+          only after official confirmation.
+        </p>
+      </div>
+    </section>
+
+    <section id="news">
+      <div class="container">
+        <h2>News and Announcements</h2>
+        <div class="grid">
+          <article class="card notice">
+            <h3>Welcome to Our Website</h3>
+            <p>
+              The school's online information platform is under development.
+              Please check back for verified updates.
+            </p>
+            <small class="muted">Website announcement</small>
+          </article>
+          <article class="card">
+            <h3>Academic Notices</h3>
+            <p>Official academic notices will appear here when published.</p>
+          </article>
+          <article class="card">
+            <h3>Events and Activities</h3>
+            <p>Updates about approved school events will be posted here.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources">
+      <div class="container">
+        <h2>Student Resources</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Student Handbook</h3>
+            <p>Access the approved handbook when it becomes available.</p>
+          </article>
+          <article class="card">
+            <h3>Learning Materials</h3>
+            <p>Find approved learning resources and study materials.</p>
+          </article>
+          <article class="card">
+            <h3>Useful Links</h3>
+            <p>Important academic and institutional links will be listed here.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="statistics">
+      <div class="container">
+        <div class="statistics">
+          <h2>Website Visitor Statistics</h2>
+          <p>
+            We are preparing our website statistics service.
+            Verified visitor figures will appear here after setup.
+          </p>
+          <p>
+            Total page visits:
+            <span class="stat-number" id="total-visits">Not connected</span>
+          </p>
+          <p>
+            Today's visits:
+            <span id="today-visits">Not connected</span>
+          </p>
+          <small>
+            Live statistics will be displayed after the secure counter
+            service is configured.
+          </small>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact the School</h2>
+        <p>
+          For official enquiries, please use the school's
+          verified institutional contact channels.
+        </p>
+        <p class="muted">
+          Official address, telephone number and email will be added
+          after confirmation.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <strong>DELSUTH School of Health Management</strong>
+      <p>
+        An online information platform for school news,
+        academic resources and announcements.
+      </p>
+      <small>
+        &copy; <span id="year"></span> DELSUTH School of Health Management.
+        Website information subject to official verification.
+      </small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
